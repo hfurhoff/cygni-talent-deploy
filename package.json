@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "mocha src/**/*.test.js",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "prettier:check": "prettier --check"
   },
   "author": "",
   "license": "ISC",
