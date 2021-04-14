@@ -6,6 +6,8 @@ function createServer(config = {}) {
   const server = http.createServer((req, res) => {
     console.log(`Received request ${req.method.toUpperCase()} ${req.url}`);
     res.writeHead(200, "OK");
+    console.log("hej");
+    console.log("då");
     res.write(Buffer.from(`Hello World! Build number ${buildNumber}\n`));
     res.end();
   });
